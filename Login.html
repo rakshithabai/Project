@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>	
+/* Used to Align the UserName and Password in the */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Used for Login/cancel button in the form*/
+button {
+    background-color: #48d1cc;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*Used to add the top image in the center of the page*/
+.imgcontainer {
+text-align: center;  
+margin: 20px 0 12px 0;    
+position: absolute;
+}
+
+
+/*used to get the circle image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/*padding around the second div*/
+.container {
+    padding: 35px;
+}
+
+
+
+/*used for close*/
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+</style>
+<body>	
+
+<h2> Modal Login Form</h2>
+
+<button onclick="document.getElementById('Second-Form').style.display='block'"
+style="width:auto;">Login
+</button>
+
+<div id="Second-Form">
+
+<form>
+
+<div class="imgcontainer">
+<span onclick="document.getElementById('Second-Form').style.display='none'" class="close" title="Close Modal"> &times;</span>
+<img src="img.png" alt="Image" class="Image">
+ </div>
+ 
+<div class="container" >
+<label><b>Username</b></label>
+<input type="text" placeholder="Enter Username"name="uname" required>
+<label><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="psw" required>
+<input type="checkbox" checked="checked">Remember me<br>
+<button type="submit">Login</button>
+<span style="float:right;;"><p>Forgot <a href="">Password</a></p><span>
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
+
+
